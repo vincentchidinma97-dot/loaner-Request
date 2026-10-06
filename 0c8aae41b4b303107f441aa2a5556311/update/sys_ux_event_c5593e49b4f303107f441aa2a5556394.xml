@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>SCREEN_STATUS_CHANGED_RELAY_68593e49b4f303107f441aa2a5556337</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Screen Status Changed Relay (New record)</label>
+        <props>[
+    {
+        "defaultValue": null,
+        "fieldType": "string",
+        "label": "Id of the screen the changed occured",
+        "name": "screenKey",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "string",
+        "label": "The status operation for this action",
+        "name": "status",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "string",
+        "label": "Display title",
+        "name": "title",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "string",
+        "label": "Icon",
+        "name": "icon",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "string",
+        "label": "Message",
+        "name": "message",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "boolean",
+        "label": "Screen is dirty",
+        "name": "isDirty",
+        "type": "boolean",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "boolean",
+        "label": "Screen has errors",
+        "name": "hasError",
+        "type": "boolean",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "boolean",
+        "label": "Screen has update",
+        "name": "hasUpdate",
+        "type": "boolean",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "string",
+        "label": "Dirty modal id",
+        "name": "dirtyModalId",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "json",
+        "label": "Tooltip preview",
+        "name": "tooltipPreview",
+        "type": "json",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "string",
+        "label": "Tab color",
+        "name": "color",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "json",
+        "label": "Highlighted value",
+        "name": "highlightedValue",
+        "type": "json",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "boolean",
+        "label": "Clear styles",
+        "name": "clearStyles",
+        "type": "boolean",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "fieldType": "json",
+        "label": "Secondary title",
+        "name": "secondaryTitle",
+        "type": "json",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "description": "These notifications will be emitted when the session tab is closed via SCREEN_STATUS_CHANGED with status as attempt_close_if_clean",
+        "fieldType": "json",
+        "label": "Closed conditional notifications",
+        "name": "closeIfCleanNotifications",
+        "type": "json",
+        "typeMetadata": {
+            "schema": {
+                "items": {
+                    "properties": {
+                        "action": {
+                            "properties": {
+                                "href": {
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "translatable": true,
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "enum": [
+                                        "dismiss",
+                                        "acknowledge",
+                                        "open"
+                                    ],
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "autoDismiss": {
+                            "properties": {
+                                "enabled": {
+                                    "type": "boolean"
+                                },
+                                "timeout": {
+                                    "type": "number"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "configAria": {
+                            "oneOf": [
+                                {
+                                    "additionalProperties": false,
+                                    "label": "ARIA properties",
+                                    "properties": {
+                                        "action": {
+                                            "additionalProperties": false,
+                                            "patternProperties": {
+                                                "^aria-": {
+                                                    "type": "string"
+                                                },
+                                                "role": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "properties": {
+                                                "aria-label": {
+                                                    "translatable": true,
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "alert": {
+                                            "additionalProperties": false,
+                                            "patternProperties": {
+                                                "^aria-": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "properties": {
+                                                "aria-label": {
+                                                    "translatable": true,
+                                                    "type": "string"
+                                                },
+                                                "role": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                {
+                                    "additionalProperties": false,
+                                    "label": "ARIA properties",
+                                    "patternProperties": {
+                                        "^aria-": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "properties": {
+                                        "aria-label": {
+                                            "translatable": true,
+                                            "type": "string"
+                                        },
+                                        "role": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            ]
+                        },
+                        "content": {
+                            "label": "Message",
+                            "translatable": true,
+                            "type": "string"
+                        },
+                        "enableFocus": {
+                            "type": "boolean"
+                        },
+                        "expanded": {
+                            "type": "boolean"
+                        },
+                        "globalOverrides": {
+                            "description": "These overrides will be applied to the notifications when the session tab is closed",
+                            "label": "Global overrides",
+                            "properties": {
+                                "action": {
+                                    "properties": {
+                                        "href": {
+                                            "type": "string"
+                                        },
+                                        "label": {
+                                            "translatable": true,
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "enum": [
+                                                "dismiss",
+                                                "acknowledge",
+                                                "open"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "autoDismiss": {
+                                    "properties": {
+                                        "enabled": {
+                                            "type": "boolean"
+                                        },
+                                        "timeout": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "configAria": {
+                                    "oneOf": [
+                                        {
+                                            "additionalProperties": false,
+                                            "label": "ARIA properties",
+                                            "properties": {
+                                                "action": {
+                                                    "additionalProperties": false,
+                                                    "patternProperties": {
+                                                        "^aria-": {
+                                                            "type": "string"
+                                                        },
+                                                        "role": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "properties": {
+                                                        "aria-label": {
+                                                            "translatable": true,
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "alert": {
+                                                    "additionalProperties": false,
+                                                    "patternProperties": {
+                                                        "^aria-": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "properties": {
+                                                        "aria-label": {
+                                                            "translatable": true,
+                                                            "type": "string"
+                                                        },
+                                                        "role": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        {
+                                            "additionalProperties": false,
+                                            "label": "ARIA properties",
+                                            "patternProperties": {
+                                                "^aria-": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "properties": {
+                                                "aria-label": {
+                                                    "translatable": true,
+                                                    "type": "string"
+                                                },
+                                                "role": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    ]
+                                },
+                                "content": {
+                                    "label": "Message",
+                                    "translatable": true,
+                                    "type": "string"
+                                },
+                                "enableFocus": {
+                                    "type": "boolean"
+                                },
+                                "expanded": {
+                                    "type": "boolean"
+                                },
+                                "header": {
+                                    "type": "string"
+                                },
+                                "icon": {
+                                    "type": "string"
+                                },
+                                "showShadow": {
+                                    "type": "boolean"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "critical",
+                                        "high",
+                                        "moderate",
+                                        "warning",
+                                        "info",
+                                        "positive",
+                                        "low"
+                                    ],
+                                    "label": "Type",
+                                    "type": "string"
+                                },
+                                "textLinkProps": {
+                                    "label": "Link",
+                                    "properties": {
+                                        "configAria": {
+                                            "type": "object"
+                                        },
+                                        "download": {
+                                            "type": [
+                                                "string",
+                                                "boolean"
+                                            ]
+                                        },
+                                        "href": {
+                                            "type": "string"
+                                        },
+                                        "iconEnd": {
+                                            "type": "string"
+                                        },
+                                        "iconStart": {
+                                            "type": "string"
+                                        },
+                                        "label": {
+                                            "translatable": true,
+                                            "type": "string"
+                                        },
+                                        "opensWindow": {
+                                            "type": "boolean"
+                                        },
+                                        "underlined": {
+                                            "type": "boolean"
+                                        },
+                                        "variant": {
+                                            "enum": [
+                                                "primary",
+                                                "secondary"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "header": {
+                            "type": "string"
+                        },
+                        "icon": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "label": "Alert ID",
+                            "type": "string"
+                        },
+                        "showShadow": {
+                            "type": "boolean"
+                        },
+                        "status": {
+                            "enum": [
+                                "critical",
+                                "high",
+                                "moderate",
+                                "warning",
+                                "info",
+                                "positive",
+                                "low"
+                            ],
+                            "label": "Type",
+                            "type": "string"
+                        },
+                        "textLinkProps": {
+                            "label": "Link",
+                            "properties": {
+                                "configAria": {
+                                    "type": "object"
+                                },
+                                "download": {
+                                    "type": [
+                                        "string",
+                                        "boolean"
+                                    ]
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "iconEnd": {
+                                    "type": "string"
+                                },
+                                "iconStart": {
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "translatable": true,
+                                    "type": "string"
+                                },
+                                "opensWindow": {
+                                    "type": "boolean"
+                                },
+                                "underlined": {
+                                    "type": "boolean"
+                                },
+                                "variant": {
+                                    "enum": [
+                                        "primary",
+                                        "secondary"
+                                    ],
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "type": "object"
+                },
+                "type": "array"
+            }
+        },
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:11:24</sys_created_on>
+        <sys_id>c5593e49b4f303107f441aa2a5556394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Screen Status Changed Relay (New record)</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">0c8aae41b4b303107f441aa2a5556311</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">0c8aae41b4b303107f441aa2a5556311</sys_scope>
+        <sys_update_name>sys_ux_event_c5593e49b4f303107f441aa2a5556394</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:11:24</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=c5593e49b4f303107f441aa2a5556394"/>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>UNIFIED_NAVIGATION#PAGE_TITLE_UPDATE_REQUESTED_RELAY_68593e49b4f303107f441aa2a5556337</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Page title update requested Relay (New record)</label>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": "Page title",
+        "fieldType": "string",
+        "label": "Label",
+        "name": "label",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Page permalink",
+        "fieldType": "string",
+        "label": "URL",
+        "name": "url",
+        "type": "string",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Page permalink",
+        "fieldType": "boolean",
+        "label": "Bypass Experience Title",
+        "name": "bypassExperienceTitle",
+        "type": "boolean",
+        "valueType": "boolean"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-06 15:11:24</sys_created_on>
+        <sys_id>01593e49b4f303107f441aa2a5556398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Page title update requested Relay (New record)</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">0c8aae41b4b303107f441aa2a5556311</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">0c8aae41b4b303107f441aa2a5556311</sys_scope>
+        <sys_update_name>sys_ux_event_01593e49b4f303107f441aa2a5556398</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-06 15:11:24</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=01593e49b4f303107f441aa2a5556398"/>
+</record_update>
