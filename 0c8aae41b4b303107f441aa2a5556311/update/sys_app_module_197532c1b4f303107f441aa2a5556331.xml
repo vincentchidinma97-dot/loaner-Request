@@ -18,7 +18,7 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles/>
+        <roles>x_cdltd_loaner_r_0.user</roles>
         <route/>
         <screen/>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>197532c1b4f303107f441aa2a5556331</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Create New</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">0c8aae41b4b303107f441aa2a5556311</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Loaner Request">0c8aae41b4b303107f441aa2a5556311</sys_scope>
         <sys_update_name>sys_app_module_197532c1b4f303107f441aa2a5556331</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-06 14:55:54</sys_updated_on>
+        <sys_updated_on>2026-10-08 02:22:06</sys_updated_on>
         <timeline_page/>
         <title>Create New</title>
         <uncancelable>false</uncancelable>
